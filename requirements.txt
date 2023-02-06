@@ -1,3 +1,4 @@
+gunicorn
 APScheduler==3.7.0
 Pillow
 aiohttp
