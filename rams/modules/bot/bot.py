@@ -35,15 +35,15 @@ async def _callbacks(_, callback_query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     elif query == "close":
-        await app.edit_inline_text(callback_query.inline_message_id, f"𝗥𝗮𝗺𝗣𝘆𝗿𝗼-𝗠𝗮𝘀𝘁𝗲𝗿 \n"
-            "ㅤ⋙ sᴛᴀᴛᴜs : 𝗔𝗸𝘁𝗶𝗳!!! \n"
+        await app.edit_inline_text(callback_query.inline_message_id, f"𝗗𝗮𝗻𝗣𝘆𝗿𝗼-𝗠𝗮𝘀𝘁𝗲𝗿 \n"
+            "ㅤ⋙ sᴛᴀᴛᴜs : ᴘʀᴇᴍɪᴜᴍ!!! \n"
             f"ㅤㅤ⋙ ᴍᴏᴅᴜʟᴇs: </b> <code>{len(modules)} </code> \n"
             f"ㅤㅤ⋙ ᴠᴇʀsɪ ʙᴏᴛ: {BOT_VER} \n"
             f"ㅤㅤ⋙ ʙʀᴀɴᴄʜ: {branch} \n"
             f"ㅤㅤ⋙ ᴠᴇʀsɪ ᴘʏʀᴏ: </b> <code>{pyrover}</code>\n"
             f"ㅤㅤ⋙ ᴠᴇʀsɪ ᴘʏᴛʜᴏɴ: </b> <code>{pyver.split()[0]}</code>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="❈ sᴜᴘᴘᴏʀᴛ ❈", url="t.me/GeezRam"), InlineKeyboardButton(text="❈ ʀᴇᴘᴏ ❈", url="https://github.com/GeezRampy/Ram-Pyro")], [InlineKeyboardButton(text="❈ ʙᴜᴋᴀ ʟᴀɢɪ ❈", callback_data="helper")]]
+                [[InlineKeyboardButton(text="❈ ʙʏ ❈", url="t.me/mhmdwldnnnn"), InlineKeyboardButton(text="❈ sᴜᴘᴘᴏʀᴛ ❈", url="https://t.me/Disney_storeDan")], [InlineKeyboardButton(text="❈ ʙᴜᴋᴀ ʟᴀɢɪ ❈", callback_data="helper")]]
             ),
         )
         return
@@ -93,7 +93,7 @@ async def on_plug_in_cb(_, callback_query: CallbackQuery):
     this_command = f"**《✧ {str(modul_name).upper()} ✧》**\n\n"
     for x in commands:
         this_command += f"  •  **Perintah:** `{str(x)}`\n  •  **Fungsi:** `{str(commands[x])}`\n\n"
-    this_command += "© @GeezRam | @UserbotCh"
+    this_command += "© Dan-Userbot | @Disney_storeDan"
     bttn = [
         [InlineKeyboardButton(text="⇕ ʙᴀᴄᴋ ⇕", callback_data="reopen"), InlineKeyboardButton(text="⇕ ᴛᴜᴛᴜᴘ ⇕", callback_data="close")],
     ]
