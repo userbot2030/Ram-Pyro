@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2023 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
 # This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
@@ -125,9 +125,9 @@ async def create_botlog(client):
     LOGGER("rams").info(
         "SEBENTAR YA KENTOD, GUA LAGI BIKIN GRUPLOG BUAT LU."
     )
-    desc = "Group Log untuk RamPyro-Bot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n⭐ Powered By ~ @userbotch ⭐"
+    desc = "Group Log untuk DanPyro-Bot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n⭐ Powered By ~ @Disney_storeDan ⭐"
     try:
-        gruplog = await client.create_supergroup("Logs RamPyro-Bot", desc)
+        gruplog = await client.create_supergroup("Logs DanPyro-Bot", desc)
         if await in_heroku():
             heroku_var = HAPP.config()
             heroku_var["BOTLOG_CHATID"] = gruplog.id
